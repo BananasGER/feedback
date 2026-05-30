@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>📩 Beschwerdeformular</title>
+    <link rel="stylesheet" href="feedback.css">
+    <style>
+    </style>
+    <link rel="icon" href="../pictures/logo.png" type="image/x-icon">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>📩 Feedback für Teammitglieder bei BananaGER</h2>
+
+        <label>Wie zufrieden bist du mit BananasGER *</label>
+        <select id="banana" required>
+            <option disabled selected>Bitte wählen</option>
+            <option>Sehr zufrieden</option>
+            <option>Zufrieden</option>
+            <option>Weniger Zufrieden</option>
+            <option>Nicht Zufrieden</option>
+        </select>
+
+        <label>Was sollte Banana besser machen* (Lass es leer wenn du keine Verbesserung hast)</label>
+        <textarea id="banana2" placeholder="Schreibe dein Verbesserungsvorschlag hier rein..." required></textarea>
+
+        <label>Wie zufrieden bist du mit der 3 Stunden Watchtime Regleung? *</label>
+        <select id="watchtime" required>
+            <option disabled selected>Bitte wählen</option>
+            <option>Sehr zufrieden</option>
+            <option>Zufrieden</option>
+            <option>Weniger Zufrieden</option>
+            <option>Nicht Zufrieden</option>
+        </select>
+
+        <label>Was sollte man an der 3 Stunden Watchtime Regelung ändern* (Lass es leer wenn du keine Verbesserung hast)</label>
+        <textarea id="watchtime2" placeholder="Schreibe dein Verbesserungsvorschlag hier rein..." required></textarea>
+
+        <label>Wie zufrieden bist du mit der Google Sheets Regelung*</label>
+        <select id="sheets" required>
+            <option disabled selected>Bitte wählen</option>
+            <option>Sehr zufrieden</option>
+            <option>Zufrieden</option>
+            <option>Weniger Zufrieden</option>
+            <option>Nicht Zufrieden</option>
+        </select>
+
+        <label>Was sollte man an der Google Sheets änderung verbessern?* (Lass es leer wenn du keine Verbesserung hast)</label>
+        <textarea id="sheets2" placeholder="Schreibe dein Verbesserungsvorschlag hier rein..." required></textarea>
+
+        <label>Wie zufrieden bist du mit der Abmeldungs Regelung?*</label>
+        <select id="abmeldung" required>
+            <option disabled selected>Bitte wählen</option>
+            <option>Sehr zufrieden</option>
+            <option>Zufrieden</option>
+            <option>Weniger Zufrieden</option>
+            <option>Nicht Zufrieden</option>
+        </select>
+
+        <label>Was sollte man an der Abmeldungs Regelung ändern?* (Lass es leer wenn du keine Verbesserung hast)</label>
+        <textarea id="abmeldung2" placeholder="Schreibe dein Verbesserungsvorschlag hier rein..." required></textarea>     
+
+        <label>Wie findest du die Idee das so eine Feedback runde alle paar Monate oder jedes Jahr passiert=*</label>
+        <select id="feedback" required>
+            <option disabled selected>Bitte wählen</option>
+            <option>Gute Idee</option>
+            <option>Schlechte Idee</option>
+        </select>
+
+        <label>Hast du sonst noch Themen die du ansprechen oder verbessern möchtest?* (Lass es leer wenn du keine Verbesserung hast)</label>
+        <textarea id="weiteres" placeholder="Schreibe dein Verbesserungsvorschlag hier rein..." required></textarea> 
+
+        <label>Informationen</label>
+        <div class="info-box">
+            <p>
+                Alle eingaben die du hier sendest werden über ein Webhook auf einen anderen Discord Server den nur Banana besitzt abgesendet. Bitte teile niemals dein Passwort in
+                eines der Felder da diese nicht sicher aufbewahrt werden. Alle eingaben die du in dieses Feedback Formular sendest werden Anonym gesendet deine Daten werden NICHT gespeichert
+                Alle Antworten werden nur von Banana alleine angeschaut und durch dieses Feedback könnten dann in naher Zukunft verbesserungen passieren. Wir bitten das ihr völlig Ehrlich
+                Antwortet damit das Feedback System seinen Sinn bekommt geplant ist für die Zukunft das man 
+            </p>
+        </div>
+
+        <button onclick="submitComplaint()">Absenden</button>
+    </div>
+
+    <script src="feedback.js"></script>
+</body>
+</html>
